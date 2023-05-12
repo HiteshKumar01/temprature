@@ -2,11 +2,9 @@ package temp.temprature;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Window;
 
@@ -58,9 +56,9 @@ public class Controller {
         Window owner1 = null;
         Float result1= Float.valueOf(farenField.getText());
         Float finalResult1=(result1-32) * 5/9;
-        System.out.println(finalResult1);
-        System.out.println("converting farenheit to celcius............");
-        System.out.println(result1 + " degree Farenheit in Celcius is  " + finalResult1 + " degree Celcius!");
+//        System.out.println(finalResult1);
+//        System.out.println("converting farenheit to celcius............");
+//        System.out.println(result1 + " degree Farenheit in Celcius is  " + finalResult1 + " degree Celcius!");
 
         showAlert(Alert.AlertType.INFORMATION, owner1,"Conversion Successfull!", result1 +
                 " degree Ferenheit is  "+ finalResult1 + " degree celcius");
